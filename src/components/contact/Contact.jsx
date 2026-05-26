@@ -91,7 +91,7 @@ const Contact = () => {
                     </div>
                     <div>
                       <span className="text-xs font-semibold text-teal-600 tracking-wider">{info.label}</span>
-                      <p className="text-slate-800 font-medium">{info.value}</p>
+                      <p className="hidden lg:flex md:flex sm:flex text-slate-800 font-medium">{info.value}</p>
                     </div>
                   </a>
                 );
