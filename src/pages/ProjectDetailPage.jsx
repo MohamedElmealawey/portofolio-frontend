@@ -264,9 +264,9 @@ const ProjectDetailPage = ({ onClose }) => {
         {/* Image Slideshow */}
         {allImages.length > 0 && (
           <div className="mb-8">
-            <div className="relative group grid grid-cols-12 gap-2">
+            <div className="relative group grid grid-cols-12 gap-4">
               {/* Main Slideshow Container */}
-              <div className="relative col-span-8 rounded-2xl overflow-hidden border border-teal-100 shadow-lg bg-black">
+              <div className="relative col-span-12 lg:col-span-8 sm:col-span-12 rounded-2xl overflow-hidden border border-teal-100 shadow-lg bg-black">
                 <div className="relative w-full h-[450px]">
                   {allImages.map((image, index) => (
                     <div
@@ -321,7 +321,7 @@ const ProjectDetailPage = ({ onClose }) => {
 
               {/* Thumbnail Navigation */}
               {hasMultipleImages && allImages.length > 1 && (
-                <div className="flex flex-wrap gap-2 col-span-4  py-4 px-1 w-full h-fit">
+                <div className="flex flex-wrap gap-2 col-span-12 md:col-span-12 lg:col-span-4 sm:col-span-12 py-4 w-full h-fit">
                   {allImages.map((image, index) => (
                     <button
                       key={index}
